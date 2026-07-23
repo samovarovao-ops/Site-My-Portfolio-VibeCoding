@@ -2,22 +2,22 @@
    CSS Custom Properties
    ============================================ */
 :root {
-    --color-bg: #0a0a0f;
-    --color-bg-secondary: #12121a;
+    --color-bg: #0a0f1a;
+    --color-bg-secondary: #0f1525;
     --color-surface: rgba(255, 255, 255, 0.03);
     --color-surface-hover: rgba(255, 255, 255, 0.06);
     --color-border: rgba(255, 255, 255, 0.08);
     --color-border-hover: rgba(255, 255, 255, 0.15);
-    --color-text: #e8e8ed;
-    --color-text-secondary: #8888a0;
-    --color-text-muted: #55556a;
-    --color-accent-1: #6c5ce7;
-    --color-accent-2: #00cec9;
-    --color-accent-3: #fd79a8;
-    --color-accent-4: #fdcb6e;
-    --gradient-primary: linear-gradient(135deg, #6c5ce7, #00cec9);
-    --gradient-warm: linear-gradient(135deg, #fd79a8, #fdcb6e);
-    --gradient-cool: linear-gradient(135deg, #00cec9, #0984e3);
+    --color-text: #e8f0f8;
+    --color-text-secondary: #88a8c8;
+    --color-text-muted: #556a8a;
+    --color-accent-1: #0088cc;
+    --color-accent-2: #00d4ff;
+    --color-accent-3: #00a8e8;
+    --color-accent-4: #40c4ff;
+    --gradient-primary: linear-gradient(135deg, #0088cc, #00d4ff);
+    --gradient-warm: linear-gradient(135deg, #00a8e8, #40c4ff);
+    --gradient-cool: linear-gradient(135deg, #0066aa, #00d4ff);
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --radius-sm: 8px;
@@ -74,9 +74,9 @@ img {
     position: fixed;
     inset: 0;
     background: 
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(108, 92, 231, 0.15), transparent),
-        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(0, 206, 201, 0.08), transparent),
-        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(253, 121, 168, 0.06), transparent);
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 136, 204, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(0, 212, 255, 0.08), transparent),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0, 168, 232, 0.06), transparent);
     z-index: -3;
     pointer-events: none;
 }
@@ -110,7 +110,7 @@ img {
     background: var(--color-accent-1);
     top: -200px;
     right: -200px;
-    opacity: 0.12;
+    opacity: 0.08;
     animation-delay: 0s;
 }
 
@@ -120,7 +120,7 @@ img {
     background: var(--color-accent-2);
     bottom: -150px;
     left: -150px;
-    opacity: 0.1;
+    opacity: 0.06;
     animation-delay: -7s;
 }
 
@@ -130,7 +130,7 @@ img {
     background: var(--color-accent-3);
     top: 50%;
     left: 50%;
-    opacity: 0.06;
+    opacity: 0.04;
     animation-delay: -14s;
 }
 
@@ -299,6 +299,29 @@ img {
     justify-content: center;
     position: relative;
     padding: 100px 24px 60px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/Background image on the main page variant 2.png') center/cover no-repeat;
+    z-index: -2;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 40, 80, 0.75) 0%,
+        rgba(0, 100, 150, 0.65) 40%,
+        rgba(0, 180, 220, 0.5) 70%,
+        rgba(0, 210, 240, 0.6) 100%
+    );
+    z-index: -1;
 }
 
 .hero__container {
@@ -676,7 +699,7 @@ img {
 .case-card__overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 15, 0.85);
+    background: rgba(10, 20, 40, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     display: flex;
@@ -743,12 +766,12 @@ img {
 .tag--react { background: rgba(97, 218, 251, 0.15); color: #61dafb; }
 .tag--sql { background: rgba(0, 150, 214, 0.15); color: #0096d6; }
 .tag--python { background: rgba(255, 211, 66, 0.15); color: #ffd342; }
-.tag--ui { background: rgba(156, 136, 255, 0.15); color: #9c88ff; }
+.tag--ui { background: rgba(0, 168, 232, 0.15); color: #00a8e8; }
 .tag--excel { background: rgba(33, 150, 83, 0.15); color: #219653; }
 .tag--html { background: rgba(227, 76, 38, 0.15); color: #e34c26; }
 .tag--css { background: rgba(38, 77, 228, 0.15); color: #264de4; }
 .tag--js { background: rgba(247, 223, 30, 0.15); color: #f7df1e; }
-.tag--ai { background: rgba(108, 92, 231, 0.15); color: #a29bfe; }
+.tag--ai { background: rgba(0, 136, 204, 0.15); color: #0088cc; }
 .tag--vk { background: rgba(76, 117, 163, 0.15); color: #4c75a3; }
 
 .case-card__title {
