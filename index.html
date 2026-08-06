@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated background -->
     <div class="bg-gradient"></div>
     <div class="bg-grid"></div>
     <div class="bg-glow bg-glow--1"></div>
@@ -25,10 +24,10 @@
                 <span class="nav__logo-bracket">{</span>ОС<span class="nav__logo-bracket">}</span>
             </a>
             <div class="nav__links">
+                <a href="#solutions" class="nav__link">Решения</a>
                 <a href="#cases" class="nav__link">Кейсы</a>
-                <a href="#services" class="nav__link">Услуги</a>
+                <a href="#process" class="nav__link">Процесс</a>
                 <a href="#about" class="nav__link">Обо мне</a>
-                <a href="#skills" class="nav__link">Навыки</a>
                 <a href="#contact" class="nav__link">Контакты</a>
             </div>
             <button class="nav__burger" id="burger" aria-label="Меню">
@@ -37,12 +36,11 @@
         </div>
     </nav>
 
-    <!-- Mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
+        <a href="#solutions" class="mobile-menu__link">Решения</a>
         <a href="#cases" class="mobile-menu__link">Кейсы</a>
-        <a href="#services" class="mobile-menu__link">Услуги</a>
+        <a href="#process" class="mobile-menu__link">Процесс</a>
         <a href="#about" class="mobile-menu__link">Обо мне</a>
-        <a href="#skills" class="mobile-menu__link">Навыки</a>
         <a href="#contact" class="mobile-menu__link">Контакты</a>
     </div>
 
@@ -87,367 +85,291 @@
                 </div>
             </div>
             <div class="hero__cta reveal">
-                <a href="#contact-form" class="btn btn--primary">Обсудить проект</a>
+                <a href="#contact" class="btn btn--primary">Обсудить проект</a>
                 <a href="#cases" class="btn btn--outline">Посмотреть кейсы</a>
             </div>
         </div>
-        <div class="hero__scroll-indicator">
-            <div class="hero__scroll-line"></div>
-        </div>
     </section>
 
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="services__container">
-            <h2 class="section-title reveal">Услуги</h2>
-            <p class="section-subtitle reveal">Что я делаю для вашего бизнеса</p>
+    <!-- Section 1: Решения -->
+    <section class="solutions" id="solutions">
+        <div class="solutions__container">
+            <h2 class="section-title reveal">Какие задачи помогают решить цифровые инструменты</h2>
+            <p class="section-subtitle reveal">Если вы узнаете здесь свою ситуацию, скорее всего, её можно решить проще, чем кажется.</p>
 
-            <div class="services__grid">
-                <div class="service-card reveal">
-                    <div class="service-card__icon">🌐</div>
-                    <h3 class="service-card__title">Сайты</h3>
-                    <p class="service-card__text">Лендинги, корпоративные сайты, портфолио. Адаптивный дизайн, быстрая загрузка, удобная навигация.</p>
+            <div class="problems__grid reveal">
+                <div class="problem-card">
+                    <div class="problem-card__icon">⏱️</div>
+                    <h3 class="problem-card__title">Рутинные задачи</h3>
+                    <p class="problem-card__text">Много времени уходит на однотипные действия.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-card__icon">🤖</div>
-                    <h3 class="service-card__title">Чат-боты</h3>
-                    <p class="service-card__text">Автоматизация общения с клиентами, обработка заявок, запись на приём, ответы на вопросы 24/7.</p>
+                <div class="problem-card">
+                    <div class="problem-card__icon">💬</div>
+                    <h3 class="problem-card__title">Повторяющиеся вопросы</h3>
+                    <p class="problem-card__text">Клиенты постоянно задают одни и те же вопросы.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-card__icon">⚡</div>
-                    <h3 class="service-card__title">Веб-приложения</h3>
-                    <p class="service-card__text">Калькуляторы, трекеры, личные кабинеты, внутренние сервисы. От MVP до полноценного продукта.</p>
+                <div class="problem-card">
+                    <div class="problem-card__icon">📊</div>
+                    <h3 class="problem-card__title">Работа в Excel</h3>
+                    <p class="problem-card__text">Таблицы становятся слишком сложными и неудобными.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-card__icon">🔄</div>
-                    <h3 class="service-card__title">Автоматизация</h3>
-                    <p class="service-card__text">Настройка процессов, интеграция сервисов, устранение рутины. Экономия времени и денег.</p>
+                <div class="problem-card">
+                    <div class="problem-card__icon">🚀</div>
+                    <h3 class="problem-card__title">Проверка идеи</h3>
+                    <p class="problem-card__text">Нужно быстро протестировать новый продукт или сервис.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card__icon">🌐</div>
+                    <h3 class="problem-card__title">Сайт для бизнеса</h3>
+                    <p class="problem-card__text">Нужен современный сайт, который помогает привлекать клиентов.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-card__icon">🤖</div>
+                    <h3 class="problem-card__title">Автоматизация</h3>
+                    <p class="problem-card__text">Хочется сократить ручную работу и освободить время.</p>
+                </div>
+            </div>
+
+            <h3 class="solutions__subtitle reveal">Что я создаю</h3>
+            <p class="section-subtitle reveal">Для каждой задачи подбираю наиболее подходящий инструмент.</p>
+
+            <div class="creates__grid reveal">
+                <div class="create-card">
+                    <div class="create-card__icon">🌐</div>
+                    <h4 class="create-card__title">Сайты</h4>
+                    <p class="create-card__text">Лендинги, корпоративные сайты, портфолио.</p>
+                </div>
+                <div class="create-card">
+                    <div class="create-card__icon">🤖</div>
+                    <h4 class="create-card__title">Чат-боты</h4>
+                    <p class="create-card__text">Автоматизация общения, заявок и консультаций.</p>
+                </div>
+                <div class="create-card">
+                    <div class="create-card__icon">⚡</div>
+                    <h4 class="create-card__title">Веб-приложения</h4>
+                    <p class="create-card__text">Мини-сервисы под конкретные задачи бизнеса.</p>
+                </div>
+                <div class="create-card">
+                    <div class="create-card__icon">📊</div>
+                    <h4 class="create-card__title">Калькуляторы</h4>
+                    <p class="create-card__text">Онлайн-расчёты для клиентов и сотрудников.</p>
+                </div>
+                <div class="create-card">
+                    <div class="create-card__icon">🧪</div>
+                    <h4 class="create-card__title">MVP</h4>
+                    <p class="create-card__text">Быстрый запуск идеи без лишних затрат.</p>
+                </div>
+                <div class="create-card">
+                    <div class="create-card__icon">🔄</div>
+                    <h4 class="create-card__title">Автоматизация</h4>
+                    <p class="create-card__text">Простые инструменты для оптимизации процессов.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="about__container">
-            <h2 class="section-title reveal">Обо мне</h2>
-
-            <div class="about__content reveal">
-                <div class="about__card">
-                    <div class="about__card-glow"></div>
-                    <p class="about__text">
-                        Более 20 лет в иностранных корпорациях — BMW и Mercedes. За это время изучила бизнес изнутри: как строятся процессы, где теряется время, что действительно мешает командам работать эффективно.
-                    </p>
-                    <p class="about__text">
-                        Сейчас помогаю малому бизнесу решать те же задачи, с которыми сталкиваются крупные корпорации — но быстрее и дешевле:
-                    </p>
-                    <ul class="about__list">
-                        <li><strong>Анализирую</strong> процессы и нахожу узкие места</li>
-                        <li><strong>Проектирую</strong> решения, которые реально используют</li>
-                        <li><strong>Создаю</strong> MVP за дни: трекеры, калькуляторы, боты, лендинги</li>
-                        <li><strong>Автоматизирую</strong> рутину, чтобы команда фокусировалась на главном</li>
-                    </ul>
-                    <p class="about__text about__text--accent">
-                        Более 20 лет в корпорациях BMW и Mercedes научили меня подходить к задачам системно. Я не просто кодирую — я сначала понимаю бизнес-процесс, потом предлагаю решение. Это экономит время и деньги на старте.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cases -->
+    <!-- Section 2: Кейсы -->
     <section class="cases" id="cases">
         <div class="cases__container">
-            <h2 class="section-title reveal">Кейсы</h2>
-            <p class="section-subtitle reveal">Реальные проекты, которые решают реальные задачи</p>
+            <h2 class="section-title reveal">Реальные проекты и результаты</h2>
 
-            <div class="cases__grid">
-                <!-- Case 1: Task Tracker -->
-                <article class="case-card reveal" data-case="tracker">
-                    <div class="case-card__image">
-                        <img src="images/tracker.png" alt="Трекер задач — Kanban-доска" class="case-card__screenshot" loading="lazy">
-                        <div class="case-card__overlay">
-                            <a href="https://task-tracker-production-fc36.up.railway.app" target="_blank" class="case-card__demo">Demo ↗</a>
-                            <a href="https://github.com/samovarovao-ops/Task-Tracker" target="_blank" class="case-card__github">GitHub ↗</a>
+            <div class="cases__list">
+                <!-- Case 1 -->
+                <article class="case reveal">
+                    <h3 class="case__title">Трекер задач для отдела продаж</h3>
+                    <div class="case__steps">
+                        <div class="case__step">
+                            <span class="case__step-label">Задача</span>
+                            <p class="case__step-text">Задачи разрознены — Excel, мессенджеры, стикеры. Потерянные дедлайны, отсутствие видимости загрузки команды.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Решение</span>
+                            <p class="case__step-text">Единая система с Kanban-доской, ролями (RBAC), уведомлениями, комментариями и вложениями.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Результат</span>
+                            <p class="case__step-text">Полноценное веб-приложение с drag-and-drop, 3 ролями, дашбордом и поиском. Внедрено в работу.</p>
                         </div>
                     </div>
-                    <div class="case-card__content">
-                        <div class="case-card__tags">
-                            <span class="tag tag--node">Node.js</span>
-                            <span class="tag tag--react">React</span>
-                            <span class="tag tag--sql">SQLite</span>
-                        </div>
-                        <h3 class="case-card__title">Трекер задач для отдела продаж</h3>
-                        <p class="case-card__problem">
-                            <strong>Боль:</strong> Задачи разрознены — Excel, мессенджеры, стикеры. Потерянные дедлайны, отсутствие видимости загрузки команды.
-                        </p>
-                        <p class="case-card__solution">
-                            <strong>Решение:</strong> Единая система с Kanban-доской, ролями (RBAC), уведомлениями, комментариями и вложениями.
-                        </p>
-                        <ul class="case-card__features">
-                            <li>Kanban с drag-and-drop</li>
-                            <li>Ролевой доступ (3 роли)</li>
-                            <li>Уведомления и комментарии</li>
-                            <li>Поиск и дашборд</li>
-                        </ul>
+                    <div class="case__links">
+                        <a href="https://task-tracker-production-fc36.up.railway.app" target="_blank" class="btn btn--outline btn--sm">Demo ↗</a>
+                        <a href="https://github.com/samovarovao-ops/Task-Tracker" target="_blank" class="btn btn--outline btn--sm">GitHub ↗</a>
                     </div>
                 </article>
 
-                <!-- Case 2: Calculator -->
-                <article class="case-card reveal" data-case="calculator">
-                    <div class="case-card__image">
-                        <img src="images/calculator.png" alt="Калькулятор каркасного дома — интерфейс" class="case-card__screenshot" loading="lazy">
-                        <div class="case-card__overlay">
-                            <a href="https://github.com/samovarovao-ops/calculator-karkasnogo-doma" target="_blank" class="case-card__github">GitHub ↗</a>
+                <!-- Case 2 -->
+                <article class="case reveal">
+                    <h3 class="case__title">Калькулятор каркасного дома</h3>
+                    <div class="case__steps">
+                        <div class="case__step">
+                            <span class="case__step-label">Задача</span>
+                            <p class="case__step-text">Ручной подсчёт сметы по прайс-листам — долго, ошибки, невозможно быстро посчитать.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Решение</span>
+                            <p class="case__step-text">Desktop-приложение: загружает справочник цен из Excel, автоматически считает стоимость по 8 разделам.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Результат</span>
+                            <p class="case__step-text">Экономия времени на расчёте с нескольких часов до нескольких минут. Тёмная тема, экспорт в CSV/Excel.</p>
                         </div>
                     </div>
-                    <div class="case-card__content">
-                        <div class="case-card__tags">
-                            <span class="tag tag--python">Python</span>
-                            <span class="tag tag--ui">customtkinter</span>
-                            <span class="tag tag--excel">Excel</span>
-                        </div>
-                        <h3 class="case-card__title">Калькулятор каркасного дома</h3>
-                        <p class="case-card__problem">
-                            <strong>Боль:</strong> Ручной подсчёт сметы по прайс-листам — долго, ошибки, невозможно быстро посчитать.
-                        </p>
-                        <p class="case-card__solution">
-                            <strong>Решение:</strong> Desktop-приложение: загружает справочник цен из Excel, автоматически считает стоимость по 8 разделам.
-                        </p>
-                        <ul class="case-card__features">
-                            <li>8 разделов строительства</li>
-                            <li>Автоматический расчёт</li>
-                            <li>Тёмная тема</li>
-                            <li>Экспорт в CSV/Excel</li>
-                        </ul>
+                    <div class="case__links">
+                        <a href="https://github.com/samovarovao-ops/calculator-karkasnogo-doma" target="_blank" class="btn btn--outline btn--sm">GitHub ↗</a>
                     </div>
                 </article>
 
-                <!-- Case 3: Landing -->
-                <article class="case-card reveal" data-case="landing">
-                    <div class="case-card__image">
-                        <img src="https://raw.githubusercontent.com/samovarovao-ops/wow-tournaments/master/images/screenshot.png" alt="WoW турниры — скриншот лендинга" class="case-card__screenshot" loading="lazy">
-                        <div class="case-card__overlay">
-                            <a href="https://sitewowtournaments.netlify.app/" target="_blank" class="case-card__demo">Demo ↗</a>
-                            <a href="https://github.com/samovarovao-ops/wow-tournaments" target="_blank" class="case-card__github">GitHub ↗</a>
+                <!-- Case 3 -->
+                <article class="case reveal">
+                    <h3 class="case__title">Лендинг WoW Турниры</h3>
+                    <div class="case__steps">
+                        <div class="case__step">
+                            <span class="case__step-label">Задача</span>
+                            <p class="case__step-text">Нет удобного инструмента для записи на турниры — заявки теряются, организаторы тратят время.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Решение</span>
+                            <p class="case__step-text">Посадочная страница с формой записи, данные автоматически попадают в Google Таблицу.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Результат</span>
+                            <p class="case__step-text">Glassmorphism-дизайн, анимации при скролле, адаптивность. Заявки поступают автоматически.</p>
                         </div>
                     </div>
-                    <div class="case-card__content">
-                        <div class="case-card__tags">
-                            <span class="tag tag--html">HTML5</span>
-                            <span class="tag tag--css">CSS3</span>
-                            <span class="tag tag--js">JavaScript</span>
-                        </div>
-                        <h3 class="case-card__title">Лендинг WoW Турниры</h3>
-                        <p class="case-card__problem">
-                            <strong>Боль:</strong> Нет удобного инструмента для записи на турниры — заявки теряются, организаторы тратят время.
-                        </p>
-                        <p class="case-card__solution">
-                            <strong>Решение:</strong> Посадочная страница с формой записи, данные автоматически попадают в Google Таблицу.
-                        </p>
-                        <ul class="case-card__features">
-                            <li>Glassmorphism-дизайн</li>
-                            <li>Анимации при скролле</li>
-                            <li>Форма с автоподстановкой</li>
-                            <li>Адаптивный дизайн</li>
-                        </ul>
+                    <div class="case__links">
+                        <a href="https://sitewowtournaments.netlify.app/" target="_blank" class="btn btn--outline btn--sm">Demo ↗</a>
+                        <a href="https://github.com/samovarovao-ops/wow-tournaments" target="_blank" class="btn btn--outline btn--sm">GitHub ↗</a>
                     </div>
                 </article>
 
-                <!-- Case 4: Chatbot -->
-                <article class="case-card reveal" data-case="chatbot">
-                    <div class="case-card__image">
-                        <img src="images/chatbot.png" alt="AI Чат-бот для ветклиники — диалог в VK" class="case-card__screenshot" loading="lazy">
-                        <div class="case-card__overlay">
-                            <a href="https://github.com/samovarovao-ops/ChatBot-Veterinar" target="_blank" class="case-card__github">GitHub ↗</a>
+                <!-- Case 4 -->
+                <article class="case reveal">
+                    <h3 class="case__title">AI Чат-бот для ветклиники</h3>
+                    <div class="case__steps">
+                        <div class="case__step">
+                            <span class="case__step-label">Задача</span>
+                            <p class="case__step-text">Десятки обращений в день: однотипные вопросы, ручная запись, проверка расписания врачей.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Решение</span>
+                            <p class="case__step-text">VK бот на базе ИИ: отвечает по базе знаний, записывает на приёмы, уведомляет администратора.</p>
+                        </div>
+                        <div class="case__step">
+                            <span class="case__step-label">Результат</span>
+                            <p class="case__step-text">Живое общение без штампов, запись на приёмы и груминг, триаж экстренных случаев.</p>
                         </div>
                     </div>
-                    <div class="case-card__content">
-                        <div class="case-card__tags">
-                            <span class="tag tag--python">Python</span>
-                            <span class="tag tag--ai">Gemini AI</span>
-                            <span class="tag tag--vk">VK API</span>
-                        </div>
-                        <h3 class="case-card__title">AI Чат-бот для ветклиники</h3>
-                        <p class="case-card__problem">
-                            <strong>Боль:</strong> Десятки обращений в день: однотипные вопросы, ручная запись, проверка расписания врачей.
-                        </p>
-                        <p class="case-card__solution">
-                            <strong>Решение:</strong> VK бот на базе ИИ: отвечает по базе знаний, записывает на приёмы, уведомляет администратора.
-                        </p>
-                        <ul class="case-card__features">
-                            <li>Живое общение без штампов</li>
-                            <li>Запись на приёмы и груминг</li>
-                            <li>Проверка занятости слотов</li>
-                            <li>Триаж экстренных случаев</li>
-                        </ul>
+                    <div class="case__links">
+                        <a href="https://github.com/samovarovao-ops/ChatBot-Veterinar" target="_blank" class="btn btn--outline btn--sm">GitHub ↗</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form" id="contact-form">
-        <div class="contact-form__container">
-            <h2 class="section-title reveal">Связаться</h2>
-            <p class="section-subtitle reveal">Опишите задачу — обсудим решение</p>
+    <!-- Section 3: Процесс -->
+    <section class="process" id="process">
+        <div class="process__container">
+            <h2 class="section-title reveal">Как проходит работа</h2>
 
-            <div class="contact-form__wrapper reveal">
-                <div class="contact-form__card">
-                    <div class="contact-form__glow"></div>
-                    <form action="https://formspree.io/f/xbdnkjgn" method="POST" class="contact-form__form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Имя</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Как вас зовут?" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact" class="form-label">Email или телефон</label>
-                            <input type="text" id="contact" name="contact" class="form-input" placeholder="email@example.com или +7 (999) 123-45-67" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Описание задачи</label>
-                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Расскажите, что нужно сделать: какая задача, для кого, какие сроки..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full">
-                            <span class="btn__text">Отправить</span>
-                            <span class="btn__loader" style="display: none;">Отправляю...</span>
-                        </button>
-                        <input type="hidden" name="_subject" value="Новое сообщение с портфолио">
-                        <input type="text" name="_gotcha" style="display: none">
-                    </form>
-                    <div class="contact-form__success" id="formSuccess" style="display: none;">
-                        <div class="contact-form__success-icon">✓</div>
-                        <h3 class="contact-form__success-title">Сообщение отправлено!</h3>
-                        <p class="contact-form__success-text">Свяжусь с вами в ближайшее время</p>
-                    </div>
+            <div class="process__steps reveal">
+                <div class="process-step">
+                    <div class="process-step__number">①</div>
+                    <p class="process-step__text">Обсуждаем задачу.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">②</div>
+                    <p class="process-step__text">Предлагаю оптимальное решение.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">③</div>
+                    <p class="process-step__text">Создаю первый рабочий вариант.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">④</div>
+                    <p class="process-step__text">Дорабатываю по обратной связи.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">⑤</div>
+                    <p class="process-step__text">Передаю готовый проект.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="skills__container">
-            <h2 class="section-title reveal">Навыки</h2>
-            <p class="section-subtitle reveal">Технологии и компетенции</p>
+    <!-- Section 4: Обо мне -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="section-title reveal">Почему со мной комфортно работать</h2>
 
-            <div class="skills__grid">
-                <div class="skill-group reveal">
-                    <h3 class="skill-group__title">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-                            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-                        </svg>
-                        Разработка
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">HTML5 / CSS3</span>
-                        <span class="skill-tag">VK API</span>
-                        <span class="skill-tag">Google Apps Script</span>
-                    </div>
+            <div class="about__cards reveal">
+                <div class="about-card">
+                    <div class="about-card__icon">🧩</div>
+                    <p class="about-card__text">Вникаю в задачу, а не просто выполняю ТЗ.</p>
                 </div>
+                <div class="about-card">
+                    <div class="about-card__icon">🎯</div>
+                    <p class="about-card__text">Предлагаю решение, которое подходит именно вашему бизнесу.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__icon">🤝</div>
+                    <p class="about-card__text">Всегда на связи и открыта к обсуждению.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__icon">🚀</div>
+                    <p class="about-card__text">Люблю создавать полезные цифровые инструменты, которые решают реальные задачи.</p>
+                </div>
+            </div>
 
-                <div class="skill-group reveal">
-                    <h3 class="skill-group__title">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-                            <circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
-                        </svg>
-                        ИИ и Автоматизация
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Gemini AI</span>
-                        <span class="skill-tag">Чат-боты</span>
-                        <span class="skill-tag">Автоматизация процессов</span>
-                        <span class="skill-tag">Интеграция API</span>
-                    </div>
+            <div class="about__bio reveal">
+                <div class="about__bio-text">
+                    <p>Более 20 лет в иностранных корпорациях — BMW и Mercedes. За это время изучила бизнес изнутри: как строятся процессы, где теряется время, что действительно мешает командам работать эффективно.</p>
+                    <p>Сейчас помогаю малому бизнесу решать те же задачи, с которыми сталкиваются крупные корпорации — но быстрее и дешевле. Не просто кодирую — сначала понимаю бизнес-процесс, потом предлагаю решение.</p>
                 </div>
+            </div>
 
-                <div class="skill-group reveal">
-                    <h3 class="skill-group__title">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                        Визуал иВидео
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Графический контент</span>
-                        <span class="skill-tag">Видеопродакшн</span>
-                        <span class="skill-tag">Дизайн интерфейсов</span>
-                    </div>
-                </div>
-
-                <div class="skill-group reveal">
-                    <h3 class="skill-group__title">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Инструменты
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git / GitHub</span>
-                        <span class="skill-tag">Netlify</span>
-                        <span class="skill-tag">Railway</span>
-                        <span class="skill-tag">PyInstaller</span>
-                        <span class="skill-tag">OpenCode</span>
-                    </div>
-                </div>
+            <div class="skills__line reveal">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">AI</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Canva</span>
+                <span class="skill-tag">CapCut</span>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Section 5: Transition -->
+    <section class="transition">
+        <div class="transition__container">
+            <h2 class="section-title reveal">Иногда решение проще, чем кажется</h2>
+            <p class="transition__text reveal">Не каждой задаче нужен большой сайт или сложная CRM. Иногда достаточно чат-бота, калькулятора, небольшого веб-приложения или автоматизации одного процесса. Я помогаю подобрать решение, которое действительно принесёт пользу.</p>
+        </div>
+    </section>
+
+    <!-- Section 6: Контакты -->
     <section class="contact" id="contact">
         <div class="contact__container">
-            <h2 class="section-title reveal">Контакт</h2>
-            <p class="section-subtitle reveal">Готова обсудить ваш проект</p>
+            <h2 class="section-title reveal">Обсудим вашу задачу?</h2>
+            <p class="section-subtitle reveal">Расскажите, что хотите создать или автоматизировать. Вместе найдём подходящее решение.</p>
 
-            <div class="contact__content reveal">
-                <div class="contact__card">
-                    <div class="contact__card-glow"></div>
-                    <p class="contact__text">
-                        Ищете того, кто превратит вашу идею в рабочий продукт за дни?<br>
-                        Напишите — обсудим задачу и предложу решение.
-                    </p>
-                    <div class="contact__email">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <a href="mailto:olga.samovarova@rambler.ru">olga.samovarova@rambler.ru</a>
-                    </div>
-                    <div class="contact__links">
-                        <a href="https://t.me/SamovarovaO" target="_blank" class="contact__link contact__link--telegram">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.492-1.302.48-.428-.013-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                            </svg>
-                            Telegram
-                        </a>
-                        <a href="https://vk.ru/svoboda_mlm" target="_blank" class="contact__link contact__link--vk">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.864 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/>
-                            </svg>
-                            VK
-                        </a>
-                        <a href="https://wa.me/79175800872" target="_blank" class="contact__link contact__link--whatsapp">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                            WhatsApp
-                        </a>
-                        <a href="https://github.com/samovarovao-ops" target="_blank" class="contact__link contact__link--github">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
+            <div class="contact__buttons reveal">
+                <a href="https://t.me/SamovarovaO" target="_blank" class="btn btn--primary">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="margin-right:8px">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.492-1.302.48-.428-.013-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    Написать в Telegram
+                </a>
+                <a href="mailto:olga.samovarova@rambler.ru" class="btn btn--outline">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" style="margin-right:8px">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Email
+                </a>
             </div>
         </div>
     </section>
