@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ольга Самоварова — MVP и автоматизация для бизнеса</title>
-    <meta name="description" content="Помогаю малому бизнесу запускать MVP за дни: калькуляторы, трекеры, лендинги, AI-боты">
+    <title>Ольга Самоварова — Цифровые решения для бизнеса</title>
+    <meta name="description" content="Помогаю предпринимателям и компаниям запускать цифровые продукты, автоматизировать процессы и создавать удобные инструменты">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,11 +25,11 @@
                 <span class="nav__logo-bracket">{</span>ОС<span class="nav__logo-bracket">}</span>
             </a>
             <div class="nav__links">
-                <a href="#about" class="nav__link">Обо мне</a>
                 <a href="#cases" class="nav__link">Кейсы</a>
-                <a href="#contact-form" class="nav__link">Связаться</a>
+                <a href="#services" class="nav__link">Услуги</a>
+                <a href="#about" class="nav__link">Обо мне</a>
                 <a href="#skills" class="nav__link">Навыки</a>
-                <a href="#contact" class="nav__link">Контакт</a>
+                <a href="#contact" class="nav__link">Контакты</a>
             </div>
             <button class="nav__burger" id="burger" aria-label="Меню">
                 <span></span><span></span><span></span>
@@ -39,11 +39,11 @@
 
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#about" class="mobile-menu__link">Обо мне</a>
         <a href="#cases" class="mobile-menu__link">Кейсы</a>
-        <a href="#contact-form" class="mobile-menu__link">Связаться</a>
+        <a href="#services" class="mobile-menu__link">Услуги</a>
+        <a href="#about" class="mobile-menu__link">Обо мне</a>
         <a href="#skills" class="mobile-menu__link">Навыки</a>
-        <a href="#contact" class="mobile-menu__link">Контакт</a>
+        <a href="#contact" class="mobile-menu__link">Контакты</a>
     </div>
 
     <!-- Hero -->
@@ -51,47 +51,79 @@
         <div class="hero__container">
             <div class="hero__badge reveal">
                 <span class="hero__badge-dot"></span>
-                Открытая к проектам
+                Открыта к проектам
             </div>
             <h1 class="hero__title reveal">
                 <span class="hero__name">Ольга Самоварова</span>
-                <span class="hero__subtitle">Создаю MVP и инструменты<br>автоматизации для бизнеса</span>
+                <span class="hero__subtitle">Создаю цифровые решения для бизнеса</span>
             </h1>
             <p class="hero__description reveal">
-                Помогаю малому бизнесу, онлайн-школам и экспертам<br>
-                запускать рабочие продукты за дни — без долгой разработки<br>
-                и лишних затрат.
+                От идеи до готового решения: сайты, чат-боты, мини-приложения, MVP и автоматизация процессов под задачи вашего бизнеса.
             </p>
-            <div class="hero__pains reveal">
-                <div class="pain-card">
-                    <div class="pain-card__icon">⏱</div>
-                    <div class="pain-card__text">
-                        <strong>Долгая разработка</strong>
-                        <span>MVP готов за 3–7 дней</span>
+            <p class="hero__extra reveal">
+                Помогаю предпринимателям и компаниям запускать цифровые продукты, автоматизировать рутинные процессы и создавать удобные инструменты без сложной и дорогой разработки.
+            </p>
+            <div class="hero__cards reveal">
+                <div class="hero-card">
+                    <div class="hero-card__icon">🌐</div>
+                    <div class="hero-card__text">
+                        <strong>Сайты</strong>
+                        <span>Лендинги, корпоративные сайты, портфолио</span>
                     </div>
                 </div>
-                <div class="pain-card">
-                    <div class="pain-card__icon">📋</div>
-                    <div class="pain-card__text">
-                        <strong>Рутина и ручной труд</strong>
-                        <span>Автоматизация процессов</span>
+                <div class="hero-card">
+                    <div class="hero-card__icon">🤖</div>
+                    <div class="hero-card__text">
+                        <strong>Чат-боты</strong>
+                        <span>Автоматизация общения и обработки заявок</span>
                     </div>
                 </div>
-                <div class="pain-card">
-                    <div class="pain-card__icon">💰</div>
-                    <div class="pain-card__text">
-                        <strong>Дорогая разработка</strong>
-                        <span>Стоимость в разы ниже</span>
+                <div class="hero-card">
+                    <div class="hero-card__icon">⚡</div>
+                    <div class="hero-card__text">
+                        <strong>Веб-приложения</strong>
+                        <span>Калькуляторы, MVP, личные кабинеты, внутренние сервисы</span>
                     </div>
                 </div>
             </div>
             <div class="hero__cta reveal">
-                <a href="#cases" class="btn btn--primary">Смотреть кейсы</a>
-                <a href="#contact" class="btn btn--outline">Связаться</a>
+                <a href="#contact-form" class="btn btn--primary">Обсудить проект</a>
+                <a href="#cases" class="btn btn--outline">Посмотреть кейсы</a>
             </div>
         </div>
         <div class="hero__scroll-indicator">
             <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="services__container">
+            <h2 class="section-title reveal">Услуги</h2>
+            <p class="section-subtitle reveal">Что я делаю для вашего бизнеса</p>
+
+            <div class="services__grid">
+                <div class="service-card reveal">
+                    <div class="service-card__icon">🌐</div>
+                    <h3 class="service-card__title">Сайты</h3>
+                    <p class="service-card__text">Лендинги, корпоративные сайты, портфолио. Адаптивный дизайн, быстрая загрузка, удобная навигация.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-card__icon">🤖</div>
+                    <h3 class="service-card__title">Чат-боты</h3>
+                    <p class="service-card__text">Автоматизация общения с клиентами, обработка заявок, запись на приём, ответы на вопросы 24/7.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-card__icon">⚡</div>
+                    <h3 class="service-card__title">Веб-приложения</h3>
+                    <p class="service-card__text">Калькуляторы, трекеры, личные кабинеты, внутренние сервисы. От MVP до полноценного продукта.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-card__icon">🔄</div>
+                    <h3 class="service-card__title">Автоматизация</h3>
+                    <p class="service-card__text">Настройка процессов, интеграция сервисов, устранение рутины. Экономия времени и денег.</p>
+                </div>
+            </div>
         </div>
     </section>
 
