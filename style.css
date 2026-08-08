@@ -703,6 +703,25 @@ img {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
+.case__mockup {
+    margin-bottom: 24px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.case__mockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.case:hover .case__mockup img {
+    transform: scale(1.02);
+}
+
 .case__header {
     display: flex;
     align-items: center;
