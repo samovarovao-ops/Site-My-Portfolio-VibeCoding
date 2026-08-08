@@ -688,7 +688,7 @@ img {
 }
 
 .case {
-    padding: 32px;
+    padding: 24px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-xl);
@@ -704,25 +704,25 @@ img {
 }
 
 .case__mockup {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 1px solid var(--glass-border);
     background: rgba(0, 0, 0, 0.2);
-    max-height: 280px;
+    height: 200px;
 }
 
 .case__mockup img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
-    object-position: top;
+    object-position: top center;
     display: block;
     transition: transform 0.5s ease;
 }
 
 .case:hover .case__mockup img {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .case__header {
@@ -769,32 +769,32 @@ img {
 .case__steps {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 16px;
+    gap: 8px;
+    margin-bottom: 12px;
 }
 
 .case__step {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: flex-start;
 }
 
 .case__step-label {
     flex-shrink: 0;
-    padding: 3px 10px;
+    padding: 2px 8px;
     background: rgba(108, 92, 231, 0.15);
     color: var(--color-accent-1);
     border-radius: 100px;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
 
 .case__step-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--color-text-secondary);
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .case__links {
